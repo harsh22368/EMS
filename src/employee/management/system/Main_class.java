@@ -27,7 +27,8 @@ public class Main_class extends JFrame {
         add.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                new AddEmployee();
+                setVisible(false);
             }
         });
         img.add(add);
@@ -39,13 +40,14 @@ public class Main_class extends JFrame {
         view.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                new View_Employee();
+                setVisible(false);
             }
         });
         img.add(view);
 
         JButton rem = new JButton("Remove Employee");
-        rem.setBounds(440,370,150,40);
+        rem.setBounds(440,370,150,4
         rem.setForeground(Color.WHITE);
         rem.setBackground(Color.black);
         rem.addActionListener(new ActionListener() {
