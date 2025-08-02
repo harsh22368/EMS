@@ -47,13 +47,13 @@ public class Main_class extends JFrame {
         img.add(view);
 
         JButton rem = new JButton("Remove Employee");
-        rem.setBounds(440,370,150,4
+        rem.setBounds(440,370,150,40);
         rem.setForeground(Color.WHITE);
         rem.setBackground(Color.black);
         rem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                new RemoveEmployee();
             }
         });
         img.add(rem);
